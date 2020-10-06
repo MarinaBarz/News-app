@@ -1,0 +1,101 @@
+@import "node_modules/bootstrap/scss/_functions";
+@import "node_modules/bootstrap/scss/_mixins";
+
+@import "variable";
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// font-family: Inter, -apple-system, BlinkMacSystemFont, Helvetica Neue,
+//     Segoe UI, Helvetica, Roboto, Arial, sans-serif;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+
+//   color: black;
+
+.card {
+  cursor: pointer;
+}
+
+.navbar-brand {
+  svg {
+    width: 35px;
+  }
+}
+
+.input-group-text {
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.icon {
+  &.sm {
+
+    svg,
+    img {
+      width: 24px;
+      height: 24px;
+    }
+
+  }
+
+  &.xs {
+
+    svg,
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  &.xs {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.img-feed {
+  width: 250px;
+}
+
+.skeleton {
+  line-height: 1;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  background: #e9ecef;
+}
+
+.skeleton::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 500px;
+  top: 0;
+  left: -500px;
+  background-image: linear-gradient(90deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0));
+  animation: skeleton-progress 1.2s ease-in-out infinite;
+}
+
+@keyframes skeleton-progress {
+  0% {
+    left: -500px;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
