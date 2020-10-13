@@ -4,8 +4,6 @@
       <hr class="hr pb-3" />
       <div class="d-flex align-items-center py-2">
         <p class="font-weight-bold mr-4 lead">Popular Searches</p>
-        <p class="text-muted mr-2">#Минск</p>
-        <p class="text-muted">#Независимости</p>
       </div>
       <div class="d-flex align-items-center py-2">
         <span class="navbar-brand"

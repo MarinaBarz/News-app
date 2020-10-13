@@ -33,19 +33,4 @@ export const MAGAZINES = [
     icon: "republic",
     url: "https://republic.ru/export/all.xml",
   },
-  // {
-  //   magazine: "Открытые медиа",
-  //   // icon: "republic",
-  //   url: "https://openmedia.io/feed/",
-  // },
-  // {
-  //   magazine: "Панорама 🙃",
-  //   // icon: "republic",
-  //   url: "https://panorama.pub/feed",
-  // },
-  // {
-  //   magazine: "Error",
-  //   // icon: "republic",
-  //   url: "https://dffdjjkd.ru/export/all.xml",
-  // },
 ];

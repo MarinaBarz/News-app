@@ -16,7 +16,6 @@
 <script>
 export default {
   props: ["imageSrc", "classes", "width", "height"],
-  // props: ["imageSrc", "classes", "width"],
 };
 </script>
 <style lang="scss">
