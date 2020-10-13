@@ -1,24 +1,12 @@
-# news
+### RSS парсер новостей
 
-## Project setup
-```
-npm install
-```
+Используемые технологии:
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- Vue.js (c использованием Composition API), Vuex, Vue-router;
+- Верстка с использованием SCSS, Bootstrap;
+- Fuse.js для поиска новостей, подсветки результатов поиска.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+**Принцип работы сайта:**
+Сайт берет заранее установленный список RSS-лент новостных изданий [(ccылка)](https://github.com/MarinaBarz/News-app/blob/master/src/constants/index.js "(ccылка)"), посылает запрос и обрабатывает полученный в ответе XML при помощи веб API DOMParser. Далее контент преобразуется в формат JSON и попадает в хранилище Vuex, откуда получают доступ другие страницы сайта.
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Поскольку вся логика реализована на клиенте, в том числе и кросс-доменные запросы, для обхода ограничений используется CORS Anywhere, от стабильности работы которого зависит доступ к сайту.
